@@ -1,11 +1,13 @@
+#Reference: https://cloud.google.com/bigquery/docs/
+
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:\\Users\\KKS\\Documents\\Anain\\default_key\\tutorial-ai-party-bd0ea38a2606.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="\PATH\filename.json"
 
 from google.cloud import bigquery
 client = bigquery.Client()
 
 query = (
-    "SELECT url FROM `tutorial-ai-party.test_image.info` "
+    "SELECT url FROM `[PROJECTNAME].[DATASETNAME].[TABLENAME]` "
 )
 
 query_job = client.query(
