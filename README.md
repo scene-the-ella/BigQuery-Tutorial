@@ -1,5 +1,3 @@
-# Get Image Url with BigQuery
-
 # AnoIn-BigQuery
 Tutoial of getting image url using BigQuery <br>
 Google BigQuery에 데이터셋을 적재하고 이용하는 튜토리얼을 소개합니다. 
