@@ -47,9 +47,10 @@ Query작업을 GCP와 바인딩하여 사용하기 위해서는 Google BigQuery 
  Query문을 python으로 작성한 코드인 bqtest.py에서 주의하실 점은 다음과 같은 부분입니다.
  ~~~
  import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:\\Users\\KKS\\Documents\\Anain\\default_key\\tutorial-ai-party-bd0ea38a2606.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="\\[PATH]\\[JASONFILENAME].json"
  ~~~
- 위의 시작하기 전에 파트에서 생성하였던 jason의 경로를 지정해주셔야 쿼리를 사용하는데 있어서 문제가 없습니다!
+ 위의 시작하기 전에 파트에서 생성하였던 json의 경로를 지정해주셔야 쿼리를 사용하는데 있어서 문제가 없습니다!
+ > Warning: 파일의 위치가 혹시 C:\User내에 존재한다면 \U부분이 인식을 하는 데에 있어서 문제가 될 수 있기 때문에, \대신 \\를 사용해 경로를 지정해주시면 됩니다. 
 
 ## Execution
 ~~~
