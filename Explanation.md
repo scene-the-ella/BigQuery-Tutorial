@@ -30,9 +30,9 @@ VALUES("[*이미지가 존재하는 온라인 주소*]")
  # URL 가져오기 Query
 제 아키텍처에서는 이미지 URL을 가져오는 작업이 필요하기 때문에 다음과 같은 구문을 사용합니다. 
 ~~~
-INSERT [*데이터셋이름*].[*테이블이름*] ([*가져올열*])
-VALUES("[*이미지가 존재하는 온라인 주소*]")
+SELECT [가져올열] FROM `[*프로젝트이름*].[*데이터셋이름*].[*테이블이름*]
 ~~~
+웹 UI에서 사용하는 *데이터셋 생성 Query*와는 다르게 이번 Query는 GCP에서 사용해야하기 때문에 *데이터셋이름,테이블이름* 뿐만 아니라 *프로젝트이름*을 함께 넣어주어야 합니다. 
 
 # Client Library 사용하기
 Query작업을 GCP와 바인딩하여 사용하기 위해서는 Google BigQuery API를 사용해야 합니다. 이를 위해서 다음 [빠른 시작](https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries?hl=ko) 문서를
