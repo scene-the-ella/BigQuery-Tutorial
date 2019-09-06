@@ -23,7 +23,7 @@ BigQuery에 데이터셋을 적재하고 사용하는 방법은 크게 세 가�
 대중적으로 많이 사용하는 SQL문을 사용하기 때문에 많은 어려움은 없을 것으로 예상되나, DML에 익숙하지 않으신 분들은 [DML Doc](https://cloud.google.com/bigquery/docs/reference/standard-sql/dml-syntax?hl=ko) 을
 보시면 도움이 되시리라 생각합니다. 데이터 생성 구문은 다음과 같이 작성하여 쿼리를 처리합니다. 
 ~~~
-INSERT [*데이터셋이름*].[*테이블이름*] ([*가져올열*])
+INSERT [*데이터셋이름*].[*테이블이름*] ([*삽입할열*])
 VALUES("[*이미지가 존재하는 온라인 주소*]")
 ~~~
  
